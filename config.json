@@ -23,6 +23,7 @@
   "properties": [
     "organization_name",
     "address",
+    "hours",
     {"name": "address", "title": "directions", "directions": true },
     {"name": "web_url", "title": "website", "url": true },
     {"name": "contact_names", "title": "Contact Information" },
@@ -31,13 +32,14 @@
 
     {"name": "facility_type", "title": "Facility Type" },
     {"name": "out_patient", "title": "Outpatient Services" },
-    {"name": "residential_offered", "title": "Residential Services" },
+    {"name": "shelter", "title": "Shelter" },
     {"name": "medical_detox_offered", "title": "Medical Detox Services" },
     {"name": "assessment_offered", "title": "Assessment Services" },
     {"name": "gender", "title": "Genders Served" },
     {"name": "pregnancy_services", "title": "Services for Pregnant Women" },
     {"name": "age", "title": "Ages Served" },
     {"name": "insurance", "title": "Payment Accepted"},
+    {"name": "hours", "title": "Hours"},
     {"name": "additional_notes", "title": "Additional Notes"}
   ],
   "list": [

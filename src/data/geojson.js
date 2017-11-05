@@ -29,6 +29,7 @@ define(function(require, exports, module) {
         "city": csvRow.city,
         "county": csvRow.county,
         "web_url": csvRow.web_url,
+        "hours": csvRow.hours,
         "additional_notes": csvRow.additional_notes
       };
 
@@ -58,7 +59,7 @@ define(function(require, exports, module) {
     this.csvToGeojson = function csvToGeojson(csv) {
       var facetValues = {
         outpatient_offered: "facility_type",
-        residential_offered: "facility_type",
+        shelter: "facility_type",
         medical_detox_offered: "facility_type",
         assessment_offered: "facility_type",
         outpatient_intensive: "out_patient",
