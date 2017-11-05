@@ -25,7 +25,7 @@ define(function(require, exports, module) {
       var properties = {
         "organization_name": csvRow.organization_name,
         "phone_numbers": csvRow.phone_numbers,
-        "address": csvRow.address + " " + csvRow.city + ", Kentucky",
+        "address": csvRow.address + " " + csvRow.city + ", California",
         "city": csvRow.city,
         "county": csvRow.county,
         "web_url": csvRow.web_url,
