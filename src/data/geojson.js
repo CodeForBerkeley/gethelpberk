@@ -29,7 +29,7 @@ define(function(require, exports, module) {
         "city": csvRow.city,
         "county": csvRow.county,
         "web_url": csvRow.web_url,
-        "hours": csvRow.hours,
+        "hours": csvRow.hours,  // delete this?
         "additional_notes": csvRow.additional_notes
       };
 
@@ -58,28 +58,14 @@ define(function(require, exports, module) {
 
     this.csvToGeojson = function csvToGeojson(csv) {
       var facetValues = {
-        outpatient_offered: "facility_type",
         shelter: "facility_type",
-        medical_detox_offered: "facility_type",
-        assessment_offered: "facility_type",
-        outpatient_intensive: "out_patient",
-        outpatient_services: "out_patient",
-        outpatient_mat: "out_patient",
-        outpatient_twelvestep: "out_patient",
-        residential_detox_offered: "residential",
+        meals: "food",
+        food_bank: "food",
+        healthcare: "facility_type",
         gender_male: "gender",
         gender_female: "gender",
-        pregnancy_services: "pregnancy",
-        no_pregnancy_services: "pregnancy",
         age_child: "age",
         age_adult: "age",
-        insurance_medicare: "insurance",
-        insurance_medicaid: "insurance",
-        insurance_gov_funded: "insurance",
-        insurance_private: "insurance",
-        insurance_payment_assistance: "insurance",
-        insurance_no_fee: "insurance",
-        insurance_self_pay: "insurance",
         county: "county"
       };
       csv = _.filter(csv, function(row) {

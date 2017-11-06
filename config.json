@@ -23,7 +23,6 @@
   "properties": [
     "organization_name",
     "address",
-    "hours",
     {"name": "address", "title": "directions", "directions": true },
     {"name": "web_url", "title": "website", "url": true },
     {"name": "contact_names", "title": "Contact Information" },
@@ -31,14 +30,11 @@
     "phone_numbers",
 
     {"name": "facility_type", "title": "Facility Type" },
-    {"name": "out_patient", "title": "Outpatient Services" },
+    {"name": "food", "title": "Food"},
+    {"name": "healthcare", "title": "Healthcare" },
     {"name": "shelter", "title": "Shelter" },
-    {"name": "medical_detox_offered", "title": "Medical Detox Services" },
-    {"name": "assessment_offered", "title": "Assessment Services" },
     {"name": "gender", "title": "Genders Served" },
-    {"name": "pregnancy_services", "title": "Services for Pregnant Women" },
     {"name": "age", "title": "Ages Served" },
-    {"name": "insurance", "title": "Payment Accepted"},
     {"name": "hours", "title": "Hours"},
     {"name": "additional_notes", "title": "Additional Notes"}
   ],
@@ -66,31 +62,14 @@
       "survey_title": "Treatment can be delivered on an outpatient or residential basis. <br><br>I am interested in learning about substance use treatment resources that are:",
       "type": "single"
     },
-    "out_patient": {
-      "title": "Outpatient",
-      "type": "single",
-      "dependency": "outpatient_offered",
-      "survey_title": "Outpatient treatments I am interested in:"
-    },
     "gender": {
       "title": "Gender",
       "survey_title": "I am interested in services for a:",
       "type": "single"
     },
-    "pregnancy": {
-      "title": "Services for a Pregnant Woman?",
-      "survey_title": "I am interested in services for someone who is pregnant:",
-      "dependency": "gender_female",
-      "type": "single"
-    },
     "age": {
       "title": "Age",
       "survey_title": "I am interested in services for a:",
-      "type": "single"
-    },
-    "insurance": {
-      "title": "Payment Accepted",
-      "survey_title": "I am interested in services that accept these payments:",
       "type": "single"
     },
     "county": {
